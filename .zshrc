@@ -29,21 +29,9 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git github rails ruby rationalise-dot)
 
-source $ZSH/oh-my-zsh.sh
-
-# Customize to your needs...
-
-#
-#
-# Inits
-#
-
 source $HOME/.zshrc.local
 
-#
-#
-# Aliases
-#
+source $ZSH/oh-my-zsh.sh
 
 source $HOME/.aliases
 source $HOME/.aliases.local
