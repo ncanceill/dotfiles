@@ -1,0 +1,26 @@
+#General
+alias ss2="ssh -2"
+alias ssx="ss2 -X"
+alias ssy="ss2 -Y"
+alias kint="kill -s INT"
+alias rr="rm -rf"
+alias xx="exit"
+alias tm="top -o vsize" # memory
+alias tu="top -o cpu" # cpu
+alias ddig="dig +noall +answer"
+alias nyan="telnet nyancat.dakko.us;tput cnorm"
+alias make="nocorrect make"
+alias grep="grep --color=auto"
+
+pg () { ps aux|grep -i $*|grep -iv GREP }
+
+#Global
+alias -g G="| grep -i"
+alias -g C="| pbcopy"
+alias -g V="pbpaste |"
+alias -g J="| python -mjson.tool"
+
+#Git
+alias gls="git ls-tree --full-tree -r HEAD"
+alias gpo='git push origin "$(current_branch)"'
+alias glo='git pull origin "$(current_branch)"'
