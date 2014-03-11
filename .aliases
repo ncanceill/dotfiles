@@ -8,7 +8,6 @@ alias xx="exit"
 alias tm="top -o vsize" # memory
 alias tu="top -o cpu" # cpu
 alias ddig="dig +noall +answer"
-alias nyan="telnet nyancat.dakko.us;tput cnorm"
 alias make="nocorrect make"
 alias grep="grep --color=auto"
 
