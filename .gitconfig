@@ -1,0 +1,8 @@
+[user]
+	name = ncanceill
+	email = nicolas.canceill@ens-cachan.org
+[github]
+	user = ncanceill
+[core]
+	editor = /usr/bin/vim
+	excludesfile = /Users/nicolas/.gitignore_global
