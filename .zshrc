@@ -30,6 +30,7 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(nyan rationalise-dot zsh_reload)
 plugins+=(git github)
 plugins+=(ruby rails)
+plugins+=python
 
 source $HOME/.zshrc.local
 
