@@ -18,6 +18,7 @@ alias -g G="| grep -i"
 alias -g C="| pbcopy"
 alias -g V="pbpaste |"
 alias -g J="| python -mjson.tool"
+alias -g Q="1>/dev/null 2>/dev/null"
 
 #Git
 alias gls="git ls-tree --full-tree -r HEAD"
