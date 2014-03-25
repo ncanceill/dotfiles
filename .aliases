@@ -11,6 +11,7 @@ alias ddig="dig +noall +answer"
 alias make="nocorrect make"
 alias grep="grep --color=auto"
 
+mc () { mkdir -p $1&&cd $1 }
 pg () { ps aux|grep -i $*|grep -iv GREP }
 
 #Global
