@@ -32,10 +32,17 @@ plugins+=(git github)
 plugins+=(ruby rails)
 plugins+=python
 
+source $HOME/.aliases.local
 source $HOME/.zshrc.local
 
 source $ZSH/oh-my-zsh.sh
 
 source $HOME/.aliases
-source $HOME/.aliases.local
+
+# Update
+update () {
+	update_local
+	cd $ZSH&&gl --rebase origin&&gl upstream&&-
+	vcsh dotfiles pull origin master
+}
 
