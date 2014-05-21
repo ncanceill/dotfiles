@@ -23,5 +23,3 @@ alias -g Q="1>/dev/null 2>/dev/null"
 
 #Git
 alias gls="git ls-tree --full-tree -r HEAD"
-alias gpo='git push origin "$(current_branch)"'
-alias glo='git pull origin "$(current_branch)"'

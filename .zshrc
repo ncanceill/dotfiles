@@ -42,7 +42,10 @@ source $HOME/.aliases
 # Update
 update () {
 	update_local
-	cd $ZSH&&gl --rebase origin&&gl upstream master&&-
+	cd $ZSH&&gco master&&\
+		gl --rebase origin&&gl upstream master&&\
+		gco upstream-edge&&gl upstream master&&\
+		gco master&&-
 	vcsh dotfiles pull origin master
 }
 
