@@ -2,9 +2,6 @@ escape ^Bb # Screen shortcut is ^B
 
 autodetach on # Autodetach session on hangup
 
-hardstatus alwayslastline
-hardstatus string "%{= g} %{= w}%-Lw%{=r}%n%f* %t%{-}%+LW"
-
 # Scrolling
 defscrollback 65534
 termcapinfo xterm* ti@:te@a
