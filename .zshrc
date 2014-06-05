@@ -44,8 +44,9 @@ update () {
 	update_local
 	cd $ZSH&&gco master&&\
 		gl --rebase origin&&gl upstream master&&\
+		gco -&&\
 		gco upstream-edge&&gl upstream master&&\
-		gco master&&-
+		gco -&&-
 	vcsh dotfiles pull origin master
 }
 
