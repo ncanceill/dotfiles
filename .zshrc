@@ -1,6 +1,5 @@
 # Path to OMZ
 export ZSH=$HOME/.oh-my-zsh
-ZSH=$ZSH # for cdablevars
 
 # Set name of the theme to load.
 ZSH_THEME="agnoster"
@@ -50,4 +49,6 @@ update () {
 		gco -&&-
 	vcsh dotfiles pull origin master
 }
+
+ZSH=$ZSH # for cdablevars
 
