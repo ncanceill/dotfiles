@@ -10,6 +10,7 @@ alias tu="top -o cpu" # cpu
 alias ddig="dig +noall +answer"
 alias make="nocorrect make"
 alias grep="grep --color=auto"
+alias gll="git ls-tree --name-only --full-tree @"
 
 mc () { mkdir -p $1&&cd $1 }
 pg () { ps aux|grep -i $*|grep -iv GREP }
