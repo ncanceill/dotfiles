@@ -42,13 +42,14 @@ source $HOME/.aliases
 # Update
 update () {
 	update_local
-	cd $ZSH&&gco master&&\
-		gl --rebase origin&&gl upstream master&&\
-		gco -&&\
-		gco upstream-edge&&gl upstream master&&\
-		gco -&&-
+	cd $ZSH&&git checkout master&&\
+		git pull --rebase origin&&git pull upstream master&&\
+		git checkout -&&\
+		git checkout upstream-edge&&git pull upstream master&&\
+		git checkout -&&cd -
 	vcsh dotfiles pull origin master
 }
 
-ZSH=$ZSH # for cdablevars
+ZSH=$ZSH
+unsetopt cdablevars
 
