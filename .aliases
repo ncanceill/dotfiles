@@ -7,13 +7,28 @@ alias rr="rm -rf"
 alias xx="exit"
 alias tm="top -o vsize" # memory
 alias tu="top -o cpu" # cpu
-alias ddig="dig +noall +answer"
 alias make="nocorrect make"
 alias grep="grep --color=auto"
 alias gll="git ls-tree --name-only --full-tree @"
 
 mc () { mkdir -p $1&&cd $1 }
 pg () { ps aux|grep -i $*|grep -iv GREP }
+
+#Network
+mping () {
+  trap "return 0" 2
+  d="$1"&&[[ -z "$d" ]]&&return 1
+  t="${2:-1}"
+  while true;do
+    echo -n "$(date '+%Y-%m-%d %H:%M:%S') ICMP echo $d => "
+    ping -c1 -t"$t" "$d" 2>/dev/null|
+    \grep -oE "time=.*"&&sleep "$t"||echo "timeout"
+  done
+}
+
+alias ddig="dig +noall +answer +additional +comment"
+alias ddix="dig +noall +answer +additional +comment -x"
+alias dddig="dig +noall +answer"
 
 #OMZ
 gfomz () {
